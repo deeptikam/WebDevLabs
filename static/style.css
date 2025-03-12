@@ -1,0 +1,50 @@
+* {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+h1 {
+    color: hotpink
+}
+
+#webname {
+    background-color: #E6E6FA
+}
+
+.link {
+    text-decoration: none;
+    color: #800080;
+    margin-right: 15px;
+}
+
+th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:#E6E6FA;
+    color: hotpink;
+    width: fit-content;
+}
+
+tr:nth-child(odd) {
+    background-color:#ffebef;
+}
+
+form {
+    display: block;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+#submit {
+    background-color: #ffebef;
+    color: hotpink;
+    border: 0px;
+    border-radius: 15px;
+}
