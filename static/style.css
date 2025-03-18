@@ -48,3 +48,28 @@ form {
     border: 0px;
     border-radius: 15px;
 }
+
+#seeMore {
+    background-color: #ffebef;
+    color: hotpink;
+    border: 0px;
+    border-radius: 15px;
+}
+
+#seeMoreList {
+    display: none;
+}
+
+#readMore {
+    background-color: #ffebef;
+    color: hotpink;
+    border: 0px;
+    border-radius: 15px;
+}
+
+#readLess {
+    background-color: #ffebef;
+    color: hotpink;
+    border: 0px;
+    border-radius: 15px;
+}

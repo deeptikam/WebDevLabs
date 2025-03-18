@@ -11,8 +11,9 @@
     <meta name = "description" content = "Deeptika Mandha professional website">
     <title>Deeptika Mandha</title>
     <script defer src="../static/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="addYear()">
     <header>
         <h1 id="webname">Deeptika Mandha</h1>
         <nav>
@@ -24,7 +25,8 @@
     </header>
     <div class = "main">
         <h2>Things I love to do for fun</h2>
-        <ul>
+        <button id="seeMore" onClick="showList()">Click to see...</button>
+        <ul id="seeMoreList">
             <li>Drawing</li>
             <li>Crochet</li>
             <li>Hanging out with friends</li>
@@ -32,7 +34,7 @@
         </ul>
     </div>
     <footer>
-        <p>&copy; 2025 designed and coded by Deeptika Mandha</p>
+        <p id="copyYear">designed and coded by Deeptika Mandha &copy; </p>
     </footer>
 </body>
 </html>

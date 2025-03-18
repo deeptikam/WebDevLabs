@@ -1,3 +1,5 @@
+//lab3
+
 var x = 5;
 var y = 7;
 var z = x + y;
@@ -45,8 +47,8 @@ function findTheBanana(array){
     });
 }
 
-findTheBanana(L1);
-findTheBanana(L2);
+// findTheBanana(L1);
+// findTheBanana(L2);
 
 function greetingFunc(){
     var d = new Date();
@@ -64,4 +66,62 @@ function greetingFunc(){
 
 greetingFunc();
 
+//lab4
 
+function addYear(){
+    var d = new Date();
+    var y = d.getFullYear();
+    document.getElementById("copyYear").innerHTML += y;
+}
+
+function showList(){
+    document.getElementById("seeMore").style.display = "none";
+    document.getElementById("seeMoreList").style.display = "block";
+}
+
+$(document).ready(function(){
+    $('#long').hide();
+    $('#readLess').hide();
+    $('#readMore').click(function(){
+        $('#readMore').hide();
+        $('#long').show();
+        $('#readLess').show();
+    }); 
+    $('#readLess').click(function(){
+        $('#long').hide();
+        $('#readLess').hide();
+        $('#short').show();
+        $('#readMore').show();
+    });
+});
+
+function checkForm(){
+    event.preventDefault();
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const comment = document.getElementById("comment");
+    const errorName = document.getElementById("errorName");
+    const errorEmail = document.getElementById("errorEmail");
+    const errorComment = document.getElementById("errorComment");
+    if (!name.checkValidity()){
+        errorName.style.display = "block";
+        errorName.style.color = "hotpink";
+        errorName.innerHTML = "Please fill out Name";
+    } else {
+        errorName.style.display = "none";
+    }
+    if (!email.checkValidity()){
+        errorEmail.style.display = "block";
+        errorEmail.style.color = "hotpink";
+        errorEmail.innerHTML = "Please fill out Email";
+    } else {
+        errorEmail.style.display = "none";
+    }
+    if (!comment.checkValidity()){
+        errorComment.style.display = "block";
+        errorComment.style.color = "hotpink";
+        errorComment.innerHTML = "Please fill out Comment";
+    } else {
+        errorComment.style.display = "none";
+    }
+}

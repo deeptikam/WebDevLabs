@@ -11,8 +11,9 @@
     <meta name = "description" content = "Deeptika Mandha professional website">
     <title>Deeptika Mandha</title>
     <script defer src="./static/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="addYear()">
     <header>
         <h1 id="webname">Deeptika Mandha</h1>
         <nav>
@@ -25,14 +26,19 @@
     <div class = "main">
         <h2 id = "greeting">Hi, my name is Deeptika</h2>
         <img src="./static/photo.JPEG" alt = "an image of me" width="300" height="400">
-        <p id="intro">I am a sophomore studying Information Systems and Art
-            at Carnegie Mellon University. I enjoy finding ways to mix art and technology 
+       
+        <p id="short">I am a sophomore studying Information Systems and Art
+            at Carnegie Mellon University.
+        </p>
+        <button id="readMore">read more</button>
+        <p id="long">I enjoy finding ways to mix art and technology 
             and using applications such as Blender. In my free time I enjoy hanging out with friends,
             trying new things, and crochet!
         </p>
+        <button id="readLess">read less</button>
     </div>
     <footer>
-        <p>&copy; 2025 designed and coded by Deeptika Mandha</p>
+        <p id="copyYear">designed and coded by Deeptika Mandha &copy; </p>
     </footer>
 </body>
 </html>
