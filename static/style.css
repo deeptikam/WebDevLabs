@@ -42,14 +42,14 @@ form {
     align-items: center;
 }
 
-#submit {
+.button {
     background-color: #ffebef;
     color: hotpink;
     border: 0px;
     border-radius: 15px;
 }
 
-#seeMore {
+/* #seeMore {
     background-color: #ffebef;
     color: hotpink;
     border: 0px;
@@ -58,7 +58,7 @@ form {
 
 #seeMoreList {
     display: none;
-}
+} */
 
 #readMore {
     background-color: #ffebef;
@@ -73,3 +73,26 @@ form {
     border: 0px;
     border-radius: 15px;
 }
+
+.funIMG {
+    border-radius: 100%;
+}
+
+.container {
+    display: inline-block;
+    border: 1px solid hotpink;
+    background-color: #E6E6FA;
+
+}
+
+.mainLayout {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10%;
+}
+
+
